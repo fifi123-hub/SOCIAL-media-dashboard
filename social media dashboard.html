@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Social Media Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2fa;
+      color: #1e202a;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .platform {
+      font-size: 1rem;
+      color: #636e72;
+      margin-bottom: 10px;
+    }
+
+    .followers {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .label {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .positive {
+      color: green;
+    }
+
+    .negative {
+      color: red;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        width: 100%;
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Social Media Dashboard</h1>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <div class="platform">Facebook</div>
+      <div class="followers">1,234</div>
+      <div class="label positive">+45 Today</div>
+    </div>
+    <div class="card">
+      <div class="platform">Twitter</div>
+      <div class="followers">980</div>
+      <div class="label positive">+30 Today</div>
+    </div>
+    <div class="card">
+      <div class="platform">Instagram</div>
+      <div class="followers">2,850</div>
+      <div class="label negative">-10 Today</div>
+    </div>
+    <div class="card">
+      <div class="platform">YouTube</div>
+      <div class="followers">1,650</div>
+      <div class="label negative">-5 Today</div>
+    </div>
+  </section>
+
+</body>
+</html>
